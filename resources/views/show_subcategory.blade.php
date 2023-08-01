@@ -13,6 +13,7 @@
     <table id="category-table" class="table table-striped table-bordered">
         <thead>
             <tr>
+                <th>S.N</th>
                 <th>ID</th>
                 <th>Name</th>
                 <th>Price</th>
@@ -27,6 +28,7 @@
         <tbody>
             @foreach($show_subcategory as $category)
             <tr>
+                <td>{{ $loop->iteration }}</td>
                 <td>{{ $category->id }}</td>
                 <td>{{ $category->name }}</td>
                 <td>{{ $category->price }}</td>

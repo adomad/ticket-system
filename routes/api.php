@@ -34,7 +34,3 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::get('/register_data', [AdminController::class, 'registerData'])->name('registerData');
 
 Route::post('/print_booking', [AdminController::class, 'print_booking'])->name('print_booking');
-
-
-
-Route::post('/create_user', [AdminController::class, 'create_user'])->name('create_user');

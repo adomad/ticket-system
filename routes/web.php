@@ -26,11 +26,6 @@ Route::get('/login', [AdminController::class, 'login'])->name('login');
 
 Route::get('/download-pdf/{id}', [AdminController::class, 'download-pdf'])->name('download_pdf');
 
-Route::get('/add_bookings', [AdminController::class, 'add_bookings'])->name('add_bookings');
-Route::get('/show_booking', [AdminController::class, 'show_booking'])->name('show_booking');
-Route::get('/booking_api', [AdminController::class, 'booking_api'])->name('booking_api');
-
-Route::delete('/booking/{id}', [AdminController::class, 'delete_booking'])->name('delete_booking');
 Route::delete('/user/{id}', [AdminController::class, 'delete_user'])->name('delete_user');
 
 
@@ -50,3 +45,4 @@ Route::get('/daterange', 'DateRangeController@index')->name('daterange.index');
 Route::post('/add_booking', [AdminController::class, 'add_booking'])->name('add_booking');
 
 require __DIR__ . '/category.php';
+require __DIR__ . '/booking.php';

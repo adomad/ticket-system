@@ -16,6 +16,7 @@ div#category-table_info {
   <table id="category-table" class="table table-striped table-bordered">
     <thead>
       <tr>
+        <th>S.N</th>
         <th>Id</th>
         <th>Name</th>
         <th>Description</th>
@@ -25,6 +26,7 @@ div#category-table_info {
     <tbody>
         @foreach($cat as $category)
         <tr>
+            <td>{{ $loop->iteration }}</td>
             <td>{{ $category->id }}</td>
             <td>{{ $category->name }}</td>
             <td>{{ $category->description }}</td>

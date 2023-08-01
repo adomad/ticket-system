@@ -28,6 +28,7 @@ Route::get('/download-pdf/{id}', [AdminController::class, 'download-pdf'])->name
 
 
 
+
 Route::get('/log_out', [AdminController::class, 'log_out'])->name('log_out');
 
 Route::post('/getAdditionalInfo', [AdminController::class, 'getAdditionalInfo'])->name('getAdditionalInfo');

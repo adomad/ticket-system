@@ -19,18 +19,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-
-
-// Route::post('/register_user', [AdminController::class, 'register_user'])->name('register_user');
-
-// Route::post('/edit_subcategory/{id}', [AdminController::class, 'edit_subcategory'])->name('edit_subcategory');
-
-
-
-
-// Route::post('/add_booking', [AdminController::class, 'add_booking'])->name('add_booking');
-
-
 Route::get('/register_data', [AdminController::class, 'registerData'])->name('registerData');
 
 Route::post('/print_booking', [AdminController::class, 'print_booking'])->name('print_booking');
